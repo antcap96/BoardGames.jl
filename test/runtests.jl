@@ -2,6 +2,7 @@ using BoardGames
 using Test
 
 include("TicTacToe.jl")
+include("RandomStrategy.jl")
 
 b = TicTacToeBoard()
 b = play(b, 5) #x
