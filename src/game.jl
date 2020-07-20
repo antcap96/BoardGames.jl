@@ -22,6 +22,6 @@ initialboard(game::Game{B,M}) where {B,M} = B()
 """
     playerturn(board)::Int
 
-Return the player's who's to move next
+Return the player who's to move next
 """
 function playerturn end
