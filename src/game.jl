@@ -25,3 +25,10 @@ initialboard(game::Game{B,M}) where {B,M} = B()
 Return the player who's to move next
 """
 function playerturn end
+
+"""
+    winner(board)::Int
+
+Return the player who just won the game
+"""
+function winner end

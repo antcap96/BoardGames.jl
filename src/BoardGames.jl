@@ -12,6 +12,7 @@ export
     getmoves,
     initialboard,
     playerturn,
+    winner,
 
     # strategy functions
     getmove,
