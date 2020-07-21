@@ -24,7 +24,7 @@ function playgame(board, s1::Strategy, s2::Strategy)
         board = play(board, m)
     end
 
-    return #TODO
+    return board#TODO
 end
 
 playgame(g::Game, s1::Strategy, s2::Strategy) = playgame(initialboard(g), s1, s2)
