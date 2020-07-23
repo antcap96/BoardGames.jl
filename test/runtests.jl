@@ -25,6 +25,7 @@ end
     @test getmoves(b) == [1,2,3,4,6,7,8,9]
     @test somemoves().winner == 1
 
-    @test playgame(TicTacToe(), RandomStrategy(), RandomStrategy()) == nothing
+    @test typeof(playgame(TicTacToe(), RandomStrategy(), RandomStrategy())) ==
+          TicTacToeBoard
 
 end
