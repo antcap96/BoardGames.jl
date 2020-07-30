@@ -11,6 +11,7 @@ export
     boardtype,
     movetype,
     play,
+    play!,
     getmoves,
     initialboard,
     playerturn,
