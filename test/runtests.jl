@@ -27,5 +27,7 @@ end
 
     @test typeof(playgame(TicTacToe(), RandomStrategy(), RandomStrategy())) ==
           TicTacToeBoard
+    @test boardtype(TicTacToe) == TicTacToeBoard
+    @test movetype(TicTacToe) == Int
 
 end
