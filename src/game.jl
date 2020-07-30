@@ -1,11 +1,34 @@
 abstract type Game{B,M} end
 
 """
+    boardtype(game)
+
+Return the type of the board for game
+"""
+boardtype(::Game{B,M}) where {B,M} = B
+boardtype(g::DataType) = boardtype(g())
+
+"""
+    movetype(game)
+
+Return the type of the move for game
+"""
+movetype(::Game{B,M}) where {B,M} = M
+movetype(g::DataType) = movetype(g)
+
+"""
     play(board, move)
 
 Play move on the board and return the resulting board
 """
 function play end
+
+"""
+    play!(board, move)
+
+Play move on the board, changing the argument
+"""
+function play! end
 
 """
     getmoves(board)
