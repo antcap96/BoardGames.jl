@@ -14,7 +14,7 @@ boardtype(g::DataType) = boardtype(g())
 Return the type of the move for game
 """
 movetype(::Game{B,M}) where {B,M} = M
-movetype(g::DataType) = movetype(g)
+movetype(g::DataType) = movetype(g())
 
 """
     play(board, move)

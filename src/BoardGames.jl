@@ -8,6 +8,8 @@ export
     Strategy,
 
     # game functions
+    boardtype,
+    movetype,
     play,
     getmoves,
     initialboard,
