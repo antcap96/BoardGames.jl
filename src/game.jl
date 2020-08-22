@@ -6,7 +6,7 @@ abstract type Game{B,M} end
 Return the type of the board for game
 """
 boardtype(::Game{B,M}) where {B,M} = B
-boardtype(g::DataType) = boardtype(g())
+boardtype(g::Type{G}) where G <: Game = boardtype(g())
 
 """
     movetype(game)
@@ -14,7 +14,7 @@ boardtype(g::DataType) = boardtype(g())
 Return the type of the move for game
 """
 movetype(::Game{B,M}) where {B,M} = M
-movetype(g::DataType) = movetype(g())
+movetype(g::Type{G}) where G <: Game = movetype(g())
 
 """
     play(board, move)
