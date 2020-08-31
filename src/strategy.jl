@@ -23,3 +23,8 @@ function playgame(board, s::Vararg{Strategy})
 end
 
 playgame(g::Game, s::Vararg{Strategy}) = playgame(initialboard(g), s...)
+
+"""
+    name(s::Strategy)
+"""
+function name end

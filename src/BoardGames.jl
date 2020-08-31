@@ -19,7 +19,8 @@ export
 
     # strategy functions
     getmove,
-    playgame
+    playgame,
+    name
 
 include("game.jl")
 include("strategy.jl")
