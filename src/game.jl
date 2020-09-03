@@ -57,3 +57,11 @@ function playerturn end
 Return the player who just won the game
 """
 function winner end
+
+"""
+    nplayers(game)
+
+Return the number of players in the game
+"""
+function nplayers end
+nplayers(game::G) where {G<:Game} = nplayers(G)

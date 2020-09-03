@@ -16,6 +16,7 @@ export
     initialboard,
     playerturn,
     winner,
+    nplayers,
 
     # strategy functions
     getmove,
