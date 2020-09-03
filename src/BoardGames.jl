@@ -21,7 +21,10 @@ export
     # strategy functions
     getmove,
     playgame,
-    name
+    name,
+    getvarsnames,
+    getvalues,
+    setvalue!
 
 include("game.jl")
 include("strategy.jl")

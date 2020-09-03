@@ -28,3 +28,19 @@ playgame(g::Game, s::Vararg{Strategy}) = playgame(initialboard(g), s...)
     name(s::Strategy)
 """
 function name end
+
+
+"""
+    getvalues(strategy)
+"""
+function getvalues end
+
+"""
+    setvalue!(strategy, name, value)
+"""
+function setvalue! end
+
+"""
+    getvarsnames(strategy)
+"""
+function getvarsnames end
