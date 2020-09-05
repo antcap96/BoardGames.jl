@@ -38,6 +38,14 @@ Return the available moves. If the array is empty, the game is assumed over
 function getmoves end
 
 """
+    hasmoves(board) -> Bool
+
+Return if there are any moves left or if the game is over
+"""
+function hasmoves end
+hasmoves(board) = !isempty(getmoves(board))
+
+"""
     initialboard(game)
 """
 function initialboard end
